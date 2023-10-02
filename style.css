@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: hsl(223, 47%, 23%);
+    --secondary-color: hsl(224, 23%, 55%);
+    --tertiary-color: hsl(245, 75%, 52%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:  hsl(225, 100%, 94%);
+    font-family: "Red Hat Display";
+}
+
+p{
+    font-size: 1rem;
+}
+
+main{
+    width: fit-content;
+    background-color: white;
+    border-radius: 1.5rem 1.5rem;
+    max-width: 450px;
+    min-width: 340px;
+    box-shadow: 0px 0px 20px rgb(0,0,0, .1);
+}
+
+.hero-banner img{
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+}
+
+.container_content{
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.primary_content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.primary_content h1{
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.primary_content p{
+    color: var(--secondary-color);
+    letter-spacing: .5px;
+}
+
+.annual_plan{
+    background-color: hsl(225, 100%, 98%, .6);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .7rem;
+}
+
+.icon_music{
+    width: 50px;
+    height: 50px;
+    background-image: url("./images/icon-music.svg");
+    background-size: contain;
+}
+
+.content_plan{
+    flex-grow: 1;
+    margin-left: 1rem;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content_plan h2{
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.content_plan p{
+    color: var(--secondary-color);
+}
+
+.annual_plan a{
+    font-weight: 700;
+    color: var(--tertiary-color);
+    transition: .2s linear;
+}
+
+.annual_plan a:hover{
+    color: hsl(245, 75%, 52%, .7);
+    text-decoration: none;
+}
+
+.btn_pay{
+    background-color: var(--tertiary-color);
+    border: none;
+    padding: 1rem;
+    border-radius: .7rem;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px hsl(245, 75%, 52%, .3);
+    font-size: .9rem;
+    transition: .2s linear;
+}
+
+.btn_pay:hover{
+    background-color: hsl(245, 75%, 52%, .7);
+}
+
+.btn_cancel{
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%, .9);
+    cursor: pointer;
+    padding: .3rem;
+    font-size: .9rem;
+    transition: .2s linear;
+}
+
+.btn_cancel:hover{
+    color: var(--primary-color);
+
+}
+
+@media screen and (max-width: 450px) {
+    .container_content{
+        padding: 1.5rem 2rem;
+    }
+}
+
+
+
+
+
