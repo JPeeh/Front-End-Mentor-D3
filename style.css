@@ -145,6 +145,16 @@ main{
 }
 
 @media screen and (max-width: 450px) {
+
+    main{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .hero-banner img{
+        border-radius: 0;
+    }
+
     .container_content{
         padding: 1.5rem 2rem;
     }
